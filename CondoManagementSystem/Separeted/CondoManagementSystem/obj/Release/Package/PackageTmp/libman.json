@@ -1,0 +1,46 @@
+{
+  "version": "1.0",
+  "defaultProvider": "cdnjs",
+  "libraries": [
+    {
+      "library": "bootswatch@5.2.3",
+      "destination": "lib/bootswatch/",
+      "files": [
+        "cerulean/bootstrap.css",
+        "cerulean/bootstrap.min.css"
+      ]
+    },
+    {
+      "library": "bootstrap@5.2.3",
+      "destination": "lib/bootstrap/",
+      "files": [
+        "js/bootstrap.min.js",
+        "js/bootstrap.bundle.js",
+        "js/bootstrap.js",
+        "css/bootstrap.min.css",
+        "css/bootstrap.css"
+      ]
+    },
+    {
+      "library": "jquery-validate@1.19.5",
+      "destination": "lib/jquery-validate/",
+      "files": [
+        "jquery.validate.min.js"
+      ]
+    },
+    {
+      "library": "jquery-validation-unobtrusive@4.0.0",
+      "destination": "lib/jquery-validation-unobtrusive/",
+      "files": [
+        "jquery.validate.unobtrusive.min.js"
+      ]
+    },
+    {
+      "library": "jquery@3.6.3",
+      "destination": "lib/jquery/",
+      "files": [
+        "jquery.min.js"
+      ]
+    }
+  ]
+}

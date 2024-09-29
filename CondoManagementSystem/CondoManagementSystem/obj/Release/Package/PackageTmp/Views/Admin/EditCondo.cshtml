@@ -1,0 +1,93 @@
+﻿@model CondoEntity.EditUserCondoEntity
+
+@{
+    ViewBag.Title = "EditCondo";
+    Layout = "~/Views/Shared/_LayoutAdminDashboard.cshtml";
+}
+
+<h2>Edit Condo</h2>
+
+@using (Html.BeginForm("EditCondo", "Admin", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    @Html.AntiForgeryToken()
+
+<div class="form-horizontal">
+    <hr />
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+    @Html.HiddenFor(model => model.CondoId)
+    <div style="padding-left:2%;">
+        <div class="form-group">
+            @Html.LabelFor(model => model.CondoName, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-4">
+                @Html.EditorFor(model => model.CondoName, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.CondoName, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.CondoEmail, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-4">
+                @Html.EditorFor(model => model.CondoEmail, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.CondoEmail, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Address, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-4">
+                <div style="padding-top:1px;">
+                    @Html.TextAreaFor(model => model.Address, new { @cols = "", @rows = "", @class = "form-control", @placeholder = "Description (Maximum 500 characters).", @maxlength = "500", @style = "height: 100px; max-height: 100px; max-width: 350px;" })
+                </div>
+                @Html.ValidationMessageFor(model => model.Address, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Contact, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-4">
+                @Html.EditorFor(model => model.Contact, new { htmlAttributes = new { @class = "form-control",Type="Number", @maxlength = "500" } })
+                @Html.ValidationMessageFor(model => model.Contact, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="row">
+                <div class="col-lg-8 col-md-12" style="padding-left:20%;">
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <img src="~/Images/(@Model.CondoPicture)" id="imagePreview" alt="" class="img-thumbnail" style="width: 100px; height: 82px;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-2" style="padding-left:19%;">
+                    <br />
+                    <input type="file" id="CondoPicture" name="CondoPicture" onchange="return fileValidation()" />
+                </div>
+                <br />
+                <div class="col-md-20" style="padding-left:38%;">
+                    <br />
+                    @Html.ActionLink("Back", "CondoInformation", "Admin", new { @class = "btn btn-info" })
+                    &nbsp;
+                    <input type="submit" id="btnSubmit" value="Update" class="btn btn-primary right" />
+                  
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+}
+<style>
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+    input[type=number] {
+        -moz-appearance: textfield;
+        /* Firefox */
+    }
+</style>

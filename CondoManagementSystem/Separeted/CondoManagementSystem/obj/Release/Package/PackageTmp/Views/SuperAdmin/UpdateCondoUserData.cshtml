@@ -1,0 +1,38 @@
+﻿@model CondoBll.UserCondoData
+
+@{
+    ViewBag.Title = "UpdateCondoUserData";
+    Layout = "~/Views/Shared/_SuperAdminLayout.cshtml";
+}
+
+<h2>Edit Admin Condo Details</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    
+<div class="form-horizontal" style="padding-left:3%;">
+    <div class="form-group">
+        <div class="row">
+            <div class="col-md-4">
+                @Html.LabelFor(model => model.Name, htmlAttributes: new { @class = "control-label" })
+                @Html.DropDownListFor(model => model.UserId, ViewBag.itemList as SelectList, "Select Name", new { @class = "form-control form-select" })
+                @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
+            </div>
+            <div class="col-md-4">
+                @Html.LabelFor(model => model.CondoName, htmlAttributes: new { @class = "control-label" })
+                @Html.DropDownListFor(model => model.CondoId, ViewBag.itemlistData as SelectList, "Select Condo", new { @class = "form-control form-select" })
+                @Html.ValidationMessageFor(model => model.CondoName, "", new { @class = "text-danger" })
+            </div>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10" style="padding-left:32%;padding-top:5%;">
+            @Html.ActionLink("Back to List", "UserCondoIndex", "SuperAdmin", new { @class = "btn btn-info" })
+            <input type="submit" value="Save Change" class="btn btn-primary" />
+        </div>
+    </div>
+</div>
+}
+

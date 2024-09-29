@@ -1,0 +1,95 @@
+﻿@model CondoEntity.CondoDbModel
+@{
+    ViewBag.Title = "EditCondoData";
+    Layout = "~/Views/Shared/_SuperAdminLayout.cshtml";
+}
+<h2>Edit Condo Details</h2>
+
+@using (Html.BeginForm("EditCondoData", "SuperAdmin", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    @Html.HiddenFor(model => model.CondoId)
+    @Html.AntiForgeryToken()
+<div>
+    <div width="500px">
+
+        <div class="form-group" style="margin:3%;">
+            <div class="row">
+                <div class="col-md-2">
+                    @Html.LabelFor(model => model.CondoName, htmlAttributes: new { @class = "control-label" })
+                    @Html.EditorFor(model => model.CondoName, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.CondoName, "", new { @class = "text-danger" })
+                </div>
+                <div class="col-md-2">
+                    @Html.LabelFor(model => model.CondoEmail, htmlAttributes: new { @class = "control-label" })
+                    @Html.EditorFor(model => model.CondoEmail, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.CondoEmail, "", new { @class = "text-danger" })
+                    @Html.HiddenFor(model => model.initialEmail)
+                </div>
+            </div>
+        </div>
+        <div class="form-group" style="margin:3%;">
+            <div class="row">
+                <div class="col-md-2">
+                    @Html.LabelFor(model => model.Contact, htmlAttributes: new { @class = "control-label" })
+                    @Html.EditorFor(model => model.Contact, new { htmlAttributes = new { @class = "form-control", Type = "Number", id = "contact" } })
+                    @Html.ValidationMessageFor(model => model.Contact, "", new { @class = "text-danger" })
+                </div>
+                <div class="col-md-2">
+                    @Html.LabelFor(model => model.Address, htmlAttributes: new { @class = "control-label" })
+                    <div style="padding-top:1px;">
+                        @Html.TextAreaFor(model => model.Address, new { @cols = "", @rows = "", @class = "form-control", @placeholder = "Description (Maximum 500 characters).", @maxlength = "500", @style = "height: 100px; max-height: 100px; max-width: 350px;" })
+                    </div>
+                    @Html.ValidationMessageFor(model => model.Address, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-lg-8 col-md-12" style="padding:10px;">
+                        <div class="row">
+                            <div class="col-lg-3">
+                                <img src="~/Images/@(Model.CondoPicture)" id="imagePreview" alt="" class="img-thumbnail" style="width: 100px; height: 82px;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-2">
+                        <br />
+                        <input type="file" id="CondoPicture" name="CondoPicture" onchange="return fileValidation()" />
+                    </div>
+                    <div class="col-md-20" style="padding-left:20%;">
+                        <br />
+
+                        @Html.ActionLink("Back", "CondoIndex", "SuperAdmin", new { @class = "btn btn-info" })
+                        &nbsp;
+                        <input type="submit" id="btnSubmit" value="Submit" class="btn btn-success right" />
+                       
+                    </div>
+                </div>
+
+            </div>
+           
+        </div>
+       
+    </div>
+  
+</div>
+   
+   
+
+}
+<style>
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+    input[type=number] {
+        -moz-appearance: textfield;
+        /* Firefox */
+    }
+</style>
+
+

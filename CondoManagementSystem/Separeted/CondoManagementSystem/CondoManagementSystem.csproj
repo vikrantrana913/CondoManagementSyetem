@@ -1,0 +1,257 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2D58EC5D-9DD0-495D-A05F-B88170032BC1}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CondoManagementSystem</RootNamespace>
+    <AssemblyName>CondoManagementSystem</AssemblyName>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Web.Razor">
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.9\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.9\lib\net45\System.Web.Webpages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages.Deployment">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.9\lib\net45\System.Web.Webpages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages.Razor">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.9\lib\net45\System.Web.Webpages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Helpers">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.9\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure">
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.2.0.1\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc">
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.9\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\Site.css" />
+    <Content Include="Global.asax" />
+    <Content Include="Images\0454e666-1847-4846-874f-1d8f043657df.jpg" />
+    <Content Include="Images\30636613-5996-462e-b694-8034ac55b506.jpg" />
+    <Content Include="Images\30b5dba3-5c84-4130-8cbe-e0d0c13815cc.jpg" />
+    <Content Include="Images\31e8f34d-4c13-4201-91d5-b50e4d46d7ea.jpg" />
+    <Content Include="Images\4947b99a-6357-49fd-b44c-c1699890de69.jpg" />
+    <Content Include="Images\5f7b50ef-e571-4ce8-8e04-5df29cab0f1f.jpg" />
+    <Content Include="Images\643cc2bc-578a-4575-9685-1f7b59e82d94.jpg" />
+    <Content Include="Images\653bc57a-670b-4939-a429-05adde8e2119.jpg" />
+    <Content Include="Images\84119e60-8ab2-4262-8a60-99e8bcce3cd9.jpg" />
+    <Content Include="Images\9d8e6255-d176-4ef4-9aec-febe7abb6040.jpg" />
+    <Content Include="Images\9e7addd8-f264-4aa5-bb56-b9d0e08411fd.jpg" />
+    <Content Include="Images\9f416ac0-75f8-4f5f-a1ad-54067d9b8bfa.jpg" />
+    <Content Include="Images\ar.jpg" />
+    <Content Include="Images\blank.png" />
+    <Content Include="Images\download.jpg" />
+    <Content Include="Images\H.jpg" />
+    <Content Include="Images\modern-villa-project-with-innovative-concept.jpg" />
+    <Content Include="Images\OIP.jpg" />
+    <Content Include="lib\bootstrap\css\bootstrap.css" />
+    <Content Include="lib\bootstrap\css\bootstrap.min.css" />
+    <Content Include="lib\bootstrap\js\bootstrap.bundle.js" />
+    <Content Include="lib\bootstrap\js\bootstrap.js" />
+    <Content Include="lib\bootstrap\js\bootstrap.min.js" />
+    <Content Include="lib\bootswatch\cerulean\bootstrap.css" />
+    <Content Include="lib\bootswatch\cerulean\bootstrap.min.css" />
+    <Content Include="lib\datatables\css\jquery.dataTables.min.css" />
+    <Content Include="lib\datatables\js\jquery.dataTables.min.js" />
+    <Content Include="lib\jquery-validate\jquery.validate.min.js" />
+    <Content Include="lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.min.js" />
+    <Content Include="lib\jqueryui\jquery-ui.js" />
+    <Content Include="lib\jqueryui\jquery-ui.min.css" />
+    <Content Include="lib\jqueryui\jquery-ui.min.js" />
+    <Content Include="lib\jqueryui\jquery.js" />
+    <Content Include="lib\jqueryui\jquery.min.js" />
+    <Content Include="lib\jqueryui\themes\smoothness\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="lib\jqueryui\themes\smoothness\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="lib\jqueryui\themes\smoothness\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="lib\jqueryui\themes\smoothness\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="lib\jqueryui\themes\smoothness\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="lib\jqueryui\themes\smoothness\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="lib\jqueryui\themes\smoothness\images\ui-icons_222222_256x240.png" />
+    <Content Include="lib\jqueryui\themes\smoothness\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="lib\jqueryui\themes\smoothness\images\ui-icons_454545_256x240.png" />
+    <Content Include="lib\jqueryui\themes\smoothness\images\ui-icons_888888_256x240.png" />
+    <Content Include="lib\jqueryui\themes\smoothness\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="lib\jqueryui\themes\smoothness\jquery-ui.css" />
+    <Content Include="lib\jqueryui\themes\smoothness\jquery-ui.min.css" />
+    <Content Include="lib\jqueryui\themes\smoothness\theme.css" />
+    <Content Include="lib\jqueryui\themes\smoothness\theme.min.css" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AdminController.cs" />
+    <Compile Include="Controllers\SuperAdminController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\web.config" />
+    <Content Include="libman.json" />
+    <Content Include="lib\jqueryui\jquery.min.map" />
+    <None Include="packages.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Admin\AdminLogin.cshtml" />
+    <Content Include="Views\Shared\_LayoutAdminDashboard.cshtml" />
+    <Content Include="Views\Admin\AdminDashboard.cshtml" />
+    <Content Include="Views\Admin\CondoInformation.cshtml" />
+    <Content Include="Views\Admin\UpdateAdmin.cshtml" />
+    <Content Include="Views\Admin\AdminProfile.cshtml" />
+    <Content Include="Views\Admin\EditPassword.cshtml" />
+    <Content Include="Views\SuperAdmin\SuperAdminLogin.cshtml" />
+    <Content Include="Views\Shared\_SuperAdminLayout.cshtml" />
+    <Content Include="Views\SuperAdmin\SuperAdminDashboard.cshtml" />
+    <Content Include="Views\SuperAdmin\AddCondoData.cshtml" />
+    <Content Include="Views\SuperAdmin\AddUser.cshtml" />
+    <Content Include="Views\SuperAdmin\EditUserData.cshtml" />
+    <Content Include="Views\SuperAdmin\EditCondoData.cshtml" />
+    <Content Include="Views\SuperAdmin\SuperAdminProfile.cshtml" />
+    <Content Include="Views\SuperAdmin\CondoDetails.cshtml" />
+    <Content Include="Views\SuperAdmin\SuperAdminEditPassword.cshtml" />
+    <Content Include="Views\SuperAdmin\UserIndex.cshtml" />
+    <Content Include="Views\SuperAdmin\CondoIndex.cshtml" />
+    <Content Include="Views\SuperAdmin\AdminDetails.cshtml" />
+    <Content Include="Views\SuperAdmin\UserCondoIndex.cshtml" />
+    <Content Include="Views\SuperAdmin\UpdateCondoUserData.cshtml" />
+    <Content Include="Views\SuperAdmin\UserCondoDetail.cshtml" />
+    <Content Include="Views\Admin\EditCondo.cshtml" />
+    <Content Include="Views\SuperAdmin\AssignCondoUser.cshtml" />
+    <Content Include="Views\SuperAdmin\AssignUserCondo.cshtml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CondoBll\CondoBll.csproj">
+      <Project>{04547973-E1F2-4C2E-BB75-8E2B4A911814}</Project>
+      <Name>CondoBll</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CondoDll\CondoDll.csproj">
+      <Project>{43F981EC-640B-4D00-B157-0E336F00AADA}</Project>
+      <Name>CondoDll</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CondoEntity\CondoEntity.csproj">
+      <Project>{46A7A048-6435-4DC3-A791-0FD4B024037B}</Project>
+      <Name>CondoEntity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SuperAdminCondoBll\SuperAdminCondoBll.csproj">
+      <Project>{483DA9A3-DA5F-443D-9754-B42816563057}</Project>
+      <Name>SuperAdminCondoBll</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SuperCondoEntities\SuperCondoEntities.csproj">
+      <Project>{19AA393B-BE5A-407C-8B60-660B5CDF8A81}</Project>
+      <Name>SuperCondoEntities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>51007</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:51007/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

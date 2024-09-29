@@ -1,0 +1,37 @@
+﻿@model CondoEntity.AssignUserCondoData
+
+@{
+    ViewBag.Title = "AssignCondoUser";
+    Layout = "~/Views/Shared/_SuperAdminLayout.cshtml";
+}
+
+<h2>Assign Condo To User</h2>
+
+@using (Html.BeginForm()) 
+{
+    @Html.AntiForgeryToken()
+    
+    <hr />
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+    <div class="form-horizontal" style="padding-left:3%;">
+        <div class="form-group">
+            <div class="row">
+                @Html.HiddenFor(model => model.UserId)
+                <div class="col-md-2"style="padding-top:3%;">
+                    @Html.DisplayFor(model => model.Name)
+                </div>
+                <div class="col-md-4">
+                    @Html.LabelFor(model => model.CondoName, htmlAttributes: new { @class = "control-label" })
+                    @Html.DropDownListFor(model => model.CondoId, ViewBag.itemlistData as SelectList, "Select Condo", new { @class = "form-control form-select" })
+                    @Html.ValidationMessageFor(model => model.CondoName, "", new { @class = "text-danger" })
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10" style="padding-left:26%;padding-top:5%;">
+                <input type="submit" value="Submit" class="btn btn-success" />
+            </div>
+        </div>
+    </div>
+    }
+

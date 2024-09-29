@@ -1,0 +1,49 @@
+﻿@model CondoEntity.UserDbModel
+@{
+    ViewBag.Title = "AdminDetails";
+    Layout = "~/Views/Shared/_SuperAdminLayout.cshtml";
+}
+<h2>Admin Details</h2>
+<div>   
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Username)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Username)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CondoName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CondoName)
+        </dd>
+    </dl>
+</div>
+<div class="image" style="padding-left:50%;margin-top:-5%;">
+    <img src="~/Images/@(Model.CondoPicture)" alt="@Model.CondoPicture" style="height:300px;width:500px;align-self:center;" />
+</div>
+<p style="padding-left:70%;">
+    @Html.ActionLink("Edit", "EditUserData", new { UserId = Model.UserId }, new { @class = "btn btn-info" }) &nbsp;
+    @Html.ActionLink("Home", "SuperAdminDashboard", "SuperAdmin", new { @class = "btn btn-info" }) &nbsp;
+</p>
+

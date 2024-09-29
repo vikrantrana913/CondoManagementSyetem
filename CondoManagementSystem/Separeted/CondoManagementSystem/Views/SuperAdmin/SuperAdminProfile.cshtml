@@ -1,0 +1,52 @@
+﻿@model CondoEntity.UserDbModel
+
+@{
+    ViewBag.Title = "SuperAdminProfile";
+    Layout = "~/Views/Shared/_SuperAdminLayout.cshtml";
+}
+
+
+@if (TempData["UserUpdateMessage"] != null)
+{
+    <div class="alert alert-success alert-dismissable" id="deletemsg">
+        <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+        <strong>Success! </strong> @TempData["UserUpdateMessage"]
+    </div>
+}
+<h2>User Details</h2>
+<div>
+
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Username)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Username)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+
+
+
+    </dl>
+</div>
+
+<p style="padding-left:70%;">
+    @Html.ActionLink("Edit", "EditUserData", new { UserId = Model.UserId }, new { @class = "btn btn-info" }) &nbsp;
+</p>

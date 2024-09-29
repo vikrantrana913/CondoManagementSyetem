@@ -1,0 +1,487 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121.
+-->
+<Project>
+  <PropertyGroup>
+    <_PublishTargetUrl>C:\Condo</_PublishTargetUrl>
+    <History>True|2023-02-13T08:27:37.2874789Z;True|2023-02-13T13:54:16.7514530+05:30;True|2023-02-13T12:52:50.5448042+05:30;True|2023-02-13T12:32:02.2550647+05:30;True|2023-02-10T10:28:40.3467712+05:30;True|2023-02-10T10:01:11.1189318+05:30;True|2023-02-09T10:41:31.3060036+05:30;True|2023-02-08T22:44:56.1505678+05:30;True|2023-02-03T17:03:59.4536384+05:30;True|2023-02-03T16:47:38.8805506+05:30;True|2023-02-03T13:55:29.6662490+05:30;True|2023-02-03T13:20:27.1399061+05:30;True|2023-02-03T12:57:15.7849077+05:30;True|2023-02-03T12:06:23.4813119+05:30;True|2023-02-03T09:46:45.3109004+05:30;True|2023-02-02T18:22:45.4348313+05:30;True|2023-02-02T17:22:54.1327058+05:30;True|2023-02-02T13:08:42.4552884+05:30;True|2023-02-02T12:42:39.5776283+05:30;True|2023-02-02T11:40:47.1817756+05:30;True|2023-02-02T10:51:57.7028911+05:30;True|2023-02-02T10:03:28.8459972+05:30;True|2023-02-01T13:46:44.7791935+05:30;True|2023-02-01T12:45:11.2174794+05:30;True|2023-02-01T09:58:40.5703176+05:30;True|2023-02-01T09:49:36.9853936+05:30;True|2023-01-31T11:44:54.6354626+05:30;True|2023-01-31T11:17:35.5574204+05:30;True|2023-01-31T10:51:07.0627492+05:30;True|2023-01-31T10:46:50.8587978+05:30;True|2023-01-31T10:25:45.4012051+05:30;True|2023-01-31T09:47:31.6572593+05:30;True|2023-01-30T09:38:55.3819287+05:30;True|2023-01-28T07:35:05.5080978+05:30;True|2023-01-28T07:16:42.6521725+05:30;True|2023-01-28T07:11:42.1579156+05:30;True|2023-01-28T06:55:52.4228991+05:30;True|2023-01-28T06:47:53.3418124+05:30;True|2023-01-27T13:02:36.1741599+05:30;True|2023-01-27T13:01:08.1621175+05:30;True|2023-01-27T12:59:55.2969306+05:30;True|2023-01-27T12:57:15.6498818+05:30;True|2023-01-27T12:44:47.4847914+05:30;True|2023-01-27T12:28:32.2901975+05:30;True|2023-01-27T12:23:26.5121100+05:30;True|2023-01-27T12:23:01.8455380+05:30;True|2023-01-25T12:02:30.6197445+05:30;True|2023-01-25T11:52:07.6160112+05:30;True|2023-01-25T11:37:55.6338374+05:30;True|2023-01-25T11:33:41.8244201+05:30;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/CondoBll.dll">
+      <publishTime>02/13/2023 13:57:34</publishTime>
+    </File>
+    <File Include="bin/CondoBll.pdb">
+      <publishTime>02/13/2023 13:57:34</publishTime>
+    </File>
+    <File Include="bin/CondoDll.dll">
+      <publishTime>02/13/2023 13:57:33</publishTime>
+    </File>
+    <File Include="bin/CondoDll.pdb">
+      <publishTime>02/13/2023 13:57:33</publishTime>
+    </File>
+    <File Include="bin/CondoEntity.dll">
+      <publishTime>02/13/2023 13:57:32</publishTime>
+    </File>
+    <File Include="bin/CondoEntity.pdb">
+      <publishTime>02/13/2023 13:57:32</publishTime>
+    </File>
+    <File Include="bin/CondoManagementSystem.dll">
+      <publishTime>02/13/2023 15:45:45</publishTime>
+    </File>
+    <File Include="bin/CondoManagementSystem.pdb">
+      <publishTime>02/13/2023 15:45:45</publishTime>
+    </File>
+    <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
+      <publishTime>09/05/2018 16:10:50</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>05/27/2022 23:39:10</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe">
+      <publishTime>08/08/2018 05:38:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe.config">
+      <publishTime>08/08/2018 12:18:12</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.rsp">
+      <publishTime>08/08/2018 12:09:42</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.exe">
+      <publishTime>08/08/2018 05:38:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.exe.config">
+      <publishTime>08/08/2018 12:18:34</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.rsp">
+      <publishTime>08/08/2018 12:09:56</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll">
+      <publishTime>08/08/2018 05:38:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.dll">
+      <publishTime>08/08/2018 05:38:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.Scripting.dll">
+      <publishTime>08/08/2018 05:38:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.dll">
+      <publishTime>08/08/2018 05:38:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.Scripting.dll">
+      <publishTime>08/08/2018 05:38:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.VisualBasic.dll">
+      <publishTime>08/08/2018 05:38:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CSharp.Core.targets">
+      <publishTime>08/08/2018 12:09:42</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.amd64.dll">
+      <publishTime>12/05/2017 09:36:44</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.x86.dll">
+      <publishTime>12/05/2017 09:36:44</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Managed.Core.targets">
+      <publishTime>08/08/2018 12:09:42</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.VisualBasic.Core.targets">
+      <publishTime>08/08/2018 12:09:42</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Win32.Primitives.dll">
+      <publishTime>11/05/2016 18:55:32</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.AppContext.dll">
+      <publishTime>11/05/2016 18:55:34</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Collections.Immutable.dll">
+      <publishTime>05/16/2018 03:29:34</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Console.dll">
+      <publishTime>11/05/2016 18:55:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Diagnostics.DiagnosticSource.dll">
+      <publishTime>11/05/2016 18:55:52</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Diagnostics.FileVersionInfo.dll">
+      <publishTime>11/05/2016 18:55:56</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Diagnostics.StackTrace.dll">
+      <publishTime>11/05/2016 18:55:52</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Globalization.Calendars.dll">
+      <publishTime>11/05/2016 18:56:02</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.Compression.dll">
+      <publishTime>11/05/2016 18:56:08</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.Compression.ZipFile.dll">
+      <publishTime>11/05/2016 18:56:04</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.FileSystem.dll">
+      <publishTime>11/05/2016 18:56:08</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.FileSystem.Primitives.dll">
+      <publishTime>11/05/2016 18:56:08</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Net.Http.dll">
+      <publishTime>11/05/2016 18:56:30</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Net.Sockets.dll">
+      <publishTime>11/05/2016 18:56:34</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Reflection.Metadata.dll">
+      <publishTime>05/16/2018 03:29:44</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Runtime.InteropServices.RuntimeInformation.dll">
+      <publishTime>11/05/2016 18:57:00</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.Algorithms.dll">
+      <publishTime>11/05/2016 18:57:14</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.Encoding.dll">
+      <publishTime>11/05/2016 18:57:08</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.Primitives.dll">
+      <publishTime>11/05/2016 18:57:18</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.X509Certificates.dll">
+      <publishTime>11/05/2016 18:57:18</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Text.Encoding.CodePages.dll">
+      <publishTime>11/05/2016 18:57:20</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Threading.Tasks.Extensions.dll">
+      <publishTime>11/05/2016 18:57:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.ValueTuple.dll">
+      <publishTime>11/05/2016 18:57:30</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.ReaderWriter.dll">
+      <publishTime>11/05/2016 18:57:36</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.XmlDocument.dll">
+      <publishTime>11/05/2016 18:57:34</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.XPath.dll">
+      <publishTime>11/05/2016 18:57:40</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.XPath.XDocument.dll">
+      <publishTime>11/05/2016 18:57:34</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe">
+      <publishTime>08/08/2018 05:38:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe.config">
+      <publishTime>08/08/2018 12:18:18</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.rsp">
+      <publishTime>08/08/2018 12:09:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe">
+      <publishTime>08/08/2018 05:38:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe.config">
+      <publishTime>08/08/2018 12:18:16</publishTime>
+    </File>
+    <File Include="bin/SuperAdminCondoBll.dll">
+      <publishTime>02/13/2023 13:57:34</publishTime>
+    </File>
+    <File Include="bin/SuperAdminCondoBll.pdb">
+      <publishTime>02/13/2023 13:57:34</publishTime>
+    </File>
+    <File Include="bin/SuperAdminCondoDll.dll">
+      <publishTime>02/13/2023 13:57:33</publishTime>
+    </File>
+    <File Include="bin/SuperAdminCondoDll.pdb">
+      <publishTime>02/13/2023 13:57:33</publishTime>
+    </File>
+    <File Include="bin/SuperCondoEntities.dll">
+      <publishTime>01/27/2023 13:47:54</publishTime>
+    </File>
+    <File Include="bin/SuperCondoEntities.pdb">
+      <publishTime>01/27/2023 13:47:54</publishTime>
+    </File>
+    <File Include="bin/System.Web.Helpers.dll">
+      <publishTime>05/27/2022 23:41:54</publishTime>
+    </File>
+    <File Include="bin/System.Web.Mvc.dll">
+      <publishTime>05/27/2022 23:42:20</publishTime>
+    </File>
+    <File Include="bin/System.Web.Razor.dll">
+      <publishTime>05/27/2022 23:42:06</publishTime>
+    </File>
+    <File Include="bin/System.Web.Webpages.Deployment.dll">
+      <publishTime>05/27/2022 23:42:46</publishTime>
+    </File>
+    <File Include="bin/System.Web.Webpages.dll">
+      <publishTime>05/27/2022 23:42:16</publishTime>
+    </File>
+    <File Include="bin/System.Web.Webpages.Razor.dll">
+      <publishTime>05/27/2022 23:42:50</publishTime>
+    </File>
+    <File Include="Content/Site.css">
+      <publishTime>01/17/2023 11:04:45</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>01/12/2023 11:26:05</publishTime>
+    </File>
+    <File Include="Images/0454e666-1847-4846-874f-1d8f043657df.jpg">
+      <publishTime>01/21/2023 22:53:55</publishTime>
+    </File>
+    <File Include="Images/30636613-5996-462e-b694-8034ac55b506.jpg">
+      <publishTime>01/31/2023 10:19:33</publishTime>
+    </File>
+    <File Include="Images/30b5dba3-5c84-4130-8cbe-e0d0c13815cc.jpg">
+      <publishTime>01/27/2023 12:00:41</publishTime>
+    </File>
+    <File Include="Images/31e8f34d-4c13-4201-91d5-b50e4d46d7ea.jpg">
+      <publishTime>01/25/2023 16:51:50</publishTime>
+    </File>
+    <File Include="Images/4947b99a-6357-49fd-b44c-c1699890de69.jpg">
+      <publishTime>01/23/2023 10:47:51</publishTime>
+    </File>
+    <File Include="Images/5f7b50ef-e571-4ce8-8e04-5df29cab0f1f.jpg">
+      <publishTime>01/21/2023 16:41:14</publishTime>
+    </File>
+    <File Include="Images/643cc2bc-578a-4575-9685-1f7b59e82d94.jpg">
+      <publishTime>01/21/2023 17:56:14</publishTime>
+    </File>
+    <File Include="Images/653bc57a-670b-4939-a429-05adde8e2119.jpg">
+      <publishTime>01/31/2023 10:22:27</publishTime>
+    </File>
+    <File Include="Images/84119e60-8ab2-4262-8a60-99e8bcce3cd9.jpg">
+      <publishTime>01/27/2023 11:59:33</publishTime>
+    </File>
+    <File Include="Images/9d8e6255-d176-4ef4-9aec-febe7abb6040.jpg">
+      <publishTime>01/30/2023 15:19:43</publishTime>
+    </File>
+    <File Include="Images/9e7addd8-f264-4aa5-bb56-b9d0e08411fd.jpg">
+      <publishTime>01/30/2023 15:18:18</publishTime>
+    </File>
+    <File Include="Images/9f416ac0-75f8-4f5f-a1ad-54067d9b8bfa.jpg">
+      <publishTime>01/23/2023 10:30:49</publishTime>
+    </File>
+    <File Include="Images/ar.jpg">
+      <publishTime>01/18/2023 13:02:05</publishTime>
+    </File>
+    <File Include="Images/blank.png">
+      <publishTime>02/02/2023 12:21:07</publishTime>
+    </File>
+    <File Include="Images/download.jpg">
+      <publishTime>01/21/2023 19:02:07</publishTime>
+    </File>
+    <File Include="Images/H.jpg">
+      <publishTime>01/21/2023 15:55:41</publishTime>
+    </File>
+    <File Include="Images/modern-villa-project-with-innovative-concept.jpg">
+      <publishTime>01/21/2023 15:53:37</publishTime>
+    </File>
+    <File Include="Images/OIP.jpg">
+      <publishTime>01/17/2023 22:06:32</publishTime>
+    </File>
+    <File Include="lib/bootstrap/css/bootstrap.css">
+      <publishTime>01/13/2023 12:13:38</publishTime>
+    </File>
+    <File Include="lib/bootstrap/css/bootstrap.min.css">
+      <publishTime>01/13/2023 12:13:38</publishTime>
+    </File>
+    <File Include="lib/bootstrap/js/bootstrap.bundle.js">
+      <publishTime>01/13/2023 12:13:38</publishTime>
+    </File>
+    <File Include="lib/bootstrap/js/bootstrap.js">
+      <publishTime>01/13/2023 12:13:38</publishTime>
+    </File>
+    <File Include="lib/bootstrap/js/bootstrap.min.js">
+      <publishTime>01/13/2023 12:13:38</publishTime>
+    </File>
+    <File Include="lib/bootswatch/cerulean/bootstrap.css">
+      <publishTime>01/13/2023 12:13:36</publishTime>
+    </File>
+    <File Include="lib/bootswatch/cerulean/bootstrap.min.css">
+      <publishTime>01/13/2023 12:13:36</publishTime>
+    </File>
+    <File Include="lib/datatables/css/jquery.dataTables.min.css">
+      <publishTime>01/16/2023 16:52:20</publishTime>
+    </File>
+    <File Include="lib/datatables/js/jquery.dataTables.min.js">
+      <publishTime>01/16/2023 16:52:20</publishTime>
+    </File>
+    <File Include="lib/jquery-validate/jquery.validate.min.js">
+      <publishTime>01/20/2023 22:04:40</publishTime>
+    </File>
+    <File Include="lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js">
+      <publishTime>01/20/2023 22:04:59</publishTime>
+    </File>
+    <File Include="lib/jqueryui/jquery-ui.js">
+      <publishTime>01/16/2023 15:39:23</publishTime>
+    </File>
+    <File Include="lib/jqueryui/jquery-ui.min.css">
+      <publishTime>01/24/2023 10:17:55</publishTime>
+    </File>
+    <File Include="lib/jqueryui/jquery-ui.min.js">
+      <publishTime>01/16/2023 16:53:12</publishTime>
+    </File>
+    <File Include="lib/jqueryui/jquery.js">
+      <publishTime>01/16/2023 17:01:32</publishTime>
+    </File>
+    <File Include="lib/jqueryui/jquery.min.js">
+      <publishTime>01/16/2023 17:01:32</publishTime>
+    </File>
+    <File Include="lib/jqueryui/jquery.min.map">
+      <publishTime>01/16/2023 17:01:32</publishTime>
+    </File>
+    <File Include="lib/jqueryui/themes/smoothness/images/ui-bg_glass_55_fbf9ee_1x400.png">
+      <publishTime>01/16/2023 16:53:12</publishTime>
+    </File>
+    <File Include="lib/jqueryui/themes/smoothness/images/ui-bg_glass_65_ffffff_1x400.png">
+      <publishTime>01/16/2023 16:53:12</publishTime>
+    </File>
+    <File Include="lib/jqueryui/themes/smoothness/images/ui-bg_glass_75_dadada_1x400.png">
+      <publishTime>01/16/2023 16:53:12</publishTime>
+    </File>
+    <File Include="lib/jqueryui/themes/smoothness/images/ui-bg_glass_75_e6e6e6_1x400.png">
+      <publishTime>01/16/2023 16:53:12</publishTime>
+    </File>
+    <File Include="lib/jqueryui/themes/smoothness/images/ui-bg_glass_95_fef1ec_1x400.png">
+      <publishTime>01/16/2023 16:53:12</publishTime>
+    </File>
+    <File Include="lib/jqueryui/themes/smoothness/images/ui-bg_highlight-soft_75_cccccc_1x100.png">
+      <publishTime>01/16/2023 16:53:12</publishTime>
+    </File>
+    <File Include="lib/jqueryui/themes/smoothness/images/ui-icons_222222_256x240.png">
+      <publishTime>01/16/2023 16:53:12</publishTime>
+    </File>
+    <File Include="lib/jqueryui/themes/smoothness/images/ui-icons_2e83ff_256x240.png">
+      <publishTime>01/16/2023 16:53:12</publishTime>
+    </File>
+    <File Include="lib/jqueryui/themes/smoothness/images/ui-icons_454545_256x240.png">
+      <publishTime>01/16/2023 16:53:12</publishTime>
+    </File>
+    <File Include="lib/jqueryui/themes/smoothness/images/ui-icons_888888_256x240.png">
+      <publishTime>01/16/2023 16:53:12</publishTime>
+    </File>
+    <File Include="lib/jqueryui/themes/smoothness/images/ui-icons_cd0a0a_256x240.png">
+      <publishTime>01/16/2023 16:53:12</publishTime>
+    </File>
+    <File Include="lib/jqueryui/themes/smoothness/jquery-ui.css">
+      <publishTime>01/16/2023 16:53:12</publishTime>
+    </File>
+    <File Include="lib/jqueryui/themes/smoothness/jquery-ui.min.css">
+      <publishTime>01/16/2023 16:53:12</publishTime>
+    </File>
+    <File Include="lib/jqueryui/themes/smoothness/theme.css">
+      <publishTime>01/16/2023 16:53:12</publishTime>
+    </File>
+    <File Include="lib/jqueryui/themes/smoothness/theme.min.css">
+      <publishTime>01/16/2023 16:53:12</publishTime>
+    </File>
+    <File Include="libman.json">
+      <publishTime>01/24/2023 11:21:41</publishTime>
+    </File>
+    <File Include="Views/Admin/AdminDashboard.cshtml">
+      <publishTime>01/31/2023 15:52:39</publishTime>
+    </File>
+    <File Include="Views/Admin/AdminLogin.cshtml">
+      <publishTime>02/10/2023 11:01:58</publishTime>
+    </File>
+    <File Include="Views/Admin/AdminProfile.cshtml">
+      <publishTime>02/04/2023 00:54:31</publishTime>
+    </File>
+    <File Include="Views/Admin/CondoInformation.cshtml">
+      <publishTime>02/13/2023 15:34:16</publishTime>
+    </File>
+    <File Include="Views/Admin/EditCondo.cshtml">
+      <publishTime>02/13/2023 15:34:37</publishTime>
+    </File>
+    <File Include="Views/Admin/EditPassword.cshtml">
+      <publishTime>02/04/2023 01:11:37</publishTime>
+    </File>
+    <File Include="Views/Admin/Index.cshtml">
+      <publishTime>01/14/2023 23:27:33</publishTime>
+    </File>
+    <File Include="Views/Admin/IndexData.cshtml">
+      <publishTime>01/24/2023 10:28:32</publishTime>
+    </File>
+    <File Include="Views/Admin/UpdateAdmin.cshtml">
+      <publishTime>02/04/2023 01:00:39</publishTime>
+    </File>
+    <File Include="Views/Shared/_Layout.cshtml">
+      <publishTime>01/24/2023 10:28:32</publishTime>
+    </File>
+    <File Include="Views/Shared/_LayoutAdminDashboard.cshtml">
+      <publishTime>02/13/2023 13:54:01</publishTime>
+    </File>
+    <File Include="Views/Shared/_SuperAdminLayout.cshtml">
+      <publishTime>02/02/2023 17:42:47</publishTime>
+    </File>
+    <File Include="Views/SuperAdmin/AddCondoData.cshtml">
+      <publishTime>02/04/2023 00:45:16</publishTime>
+    </File>
+    <File Include="Views/SuperAdmin/AddUser.cshtml">
+      <publishTime>02/04/2023 00:41:36</publishTime>
+    </File>
+    <File Include="Views/SuperAdmin/AdminDetails.cshtml">
+      <publishTime>01/31/2023 15:48:20</publishTime>
+    </File>
+    <File Include="Views/SuperAdmin/AssignCondoUser.cshtml">
+      <publishTime>02/02/2023 11:35:04</publishTime>
+    </File>
+    <File Include="Views/SuperAdmin/AssignUserCondo.cshtml">
+      <publishTime>02/02/2023 09:46:18</publishTime>
+    </File>
+    <File Include="Views/SuperAdmin/CondoDetails.cshtml">
+      <publishTime>02/04/2023 00:46:56</publishTime>
+    </File>
+    <File Include="Views/SuperAdmin/CondoIndex.cshtml">
+      <publishTime>02/02/2023 17:48:35</publishTime>
+    </File>
+    <File Include="Views/SuperAdmin/EditCondoData.cshtml">
+      <publishTime>02/04/2023 00:52:00</publishTime>
+    </File>
+    <File Include="Views/SuperAdmin/EditUserData.cshtml">
+      <publishTime>02/04/2023 00:35:51</publishTime>
+    </File>
+    <File Include="Views/SuperAdmin/Index.cshtml">
+      <publishTime>01/19/2023 10:00:20</publishTime>
+    </File>
+    <File Include="Views/SuperAdmin/ShowIncomingRequestData.cshtml">
+      <publishTime>01/24/2023 17:10:30</publishTime>
+    </File>
+    <File Include="Views/SuperAdmin/SuperAdminDashboard.cshtml">
+      <publishTime>01/19/2023 13:48:35</publishTime>
+    </File>
+    <File Include="Views/SuperAdmin/SuperAdminEditPassword.cshtml">
+      <publishTime>01/31/2023 15:48:20</publishTime>
+    </File>
+    <File Include="Views/SuperAdmin/SuperAdminLogin.cshtml">
+      <publishTime>02/10/2023 11:04:01</publishTime>
+    </File>
+    <File Include="Views/SuperAdmin/SuperAdminProfile.cshtml">
+      <publishTime>02/04/2023 00:39:44</publishTime>
+    </File>
+    <File Include="Views/SuperAdmin/UpdateCondoUserData.cshtml">
+      <publishTime>01/31/2023 16:26:10</publishTime>
+    </File>
+    <File Include="Views/SuperAdmin/UserCondoDetail.cshtml">
+      <publishTime>02/02/2023 11:38:56</publishTime>
+    </File>
+    <File Include="Views/SuperAdmin/UserCondoIndex.cshtml">
+      <publishTime>01/31/2023 12:31:16</publishTime>
+    </File>
+    <File Include="Views/SuperAdmin/UserIndex.cshtml">
+      <publishTime>02/04/2023 00:40:59</publishTime>
+    </File>
+    <File Include="Views/web.config">
+      <publishTime>01/24/2023 17:27:23</publishTime>
+    </File>
+    <File Include="Views/_ViewStart.cshtml">
+      <publishTime>01/12/2023 13:04:59</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>01/25/2023 11:52:06</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

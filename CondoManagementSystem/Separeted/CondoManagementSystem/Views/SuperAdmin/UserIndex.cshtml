@@ -1,0 +1,117 @@
+﻿@model IEnumerable<CondoBll.UserCondoData>
+
+@{
+    ViewBag.Title = "UserIndex";
+    Layout = "~/Views/Shared/_SuperAdminLayout.cshtml";
+}
+
+<h2>Admins</h2>
+@if (TempData["UserUpdateMessage"] != null)
+{
+    <div class="alert alert-success alert-dismissable" id="editmsg">
+        <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+        <strong>Success! </strong> @TempData["UserUpdateMessage"]
+    </div>
+}
+@if (TempData["DeleteUserMessage"] != null)
+{
+    <div class="alert alert-success alert-dismissable" id="editmsg">
+        <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+        <strong>Success! </strong> @TempData["DeleteUserMessage"]
+    </div>
+}
+@if (TempData["UserAddMessage"] != null)
+{
+    <div class="alert alert-success alert-dismissable" id="editmsg">
+        <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+        <strong>Success! </strong> @TempData["UserAddMessage"]
+    </div>
+}
+@if (TempData["AssignCondo"] != null)
+{
+    <div class="alert alert-success alert-dismissable" id="editmsg">
+        <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+        <strong>Success! </strong> @TempData["UserAddMessage"]
+    </div>
+}
+
+<p style="padding-left:88%;">
+    @Html.ActionLink("Add New Admin", "AddUser", "SuperAdmin", new { @class = "btn btn-info" })
+</p>
+<div style="padding:0px 7px 2px 4px;">
+    <table class="table" id="filterTable">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Name)
+                </th>
+
+                <th>
+                    @Html.DisplayNameFor(model => model.Email)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Username)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.CondoName)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.RoleType)
+                </th>
+                <th>Manage</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Name)
+                    </td>
+
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Email)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Username)
+                    </td>
+                    <td>
+                        @if (string.IsNullOrEmpty(item.CondoName))
+                        {
+                            <a href="@Url.Action("AssignCondoUser", "SuperAdmin", new {id=item.UserId})">Assign Condo</a>
+
+                        }
+                        else
+                        {
+                            @Html.DisplayFor(modelItem => item.CondoName)
+                        }
+                    </td>
+
+                    <td>
+                        @Html.DisplayFor(modelItem => item.RoleType)
+                    </td>
+
+                    <td>
+                        @Html.ActionLink("Edit", "EditUserData", "SuperAdmin", new { UserId = item.UserId }, new { @class = "btn btn-info" }) &nbsp;
+                        @Html.ActionLink("Details", "SuperAdminProfile", "SuperAdmin", new { userId = item.UserId }, new { @class = "btn btn-warning" }) &nbsp;
+                        @Html.ActionLink("Delete", "DeleteUserData", new { UserId = item.UserId }, new { CondoId = item.CondoId, onclick = "return confirm('Are you sure want to delete ?');", @class = "btn btn-danger" })
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+@section scripts{
+    <script src="~/lib/datatables/js/jquery.dataTables.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#filterTable').DataTable({
+                order: [], // for disable initial shorting
+                pageLength: 5, // for start page length
+                lengthMenu: [[5, 10, 25, -1], [5, 10, 25, 'All']] // for giving specific row count
+                 
+
+            });
+        });
+    </script>
+}

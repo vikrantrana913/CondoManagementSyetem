@@ -1,0 +1,134 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link href="~/lib/datatables/css/jquery.dataTables.min.css" rel="stylesheet" />
+    <style>
+
+        body{
+            background-color:azure;
+        }
+        #filterTable{
+            width:99%;
+            background-color:gainsboro;
+            border: 1px solid gray;
+
+        }
+      
+        tr{
+            border:2px solid black;
+           
+
+        }
+        tbody td{
+            background-color:antiquewhite;
+           border: 1px solid gray;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-inverse">
+
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">@Session["Name"]</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p><b>Are you sure want to Logout ?</b></p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                        @Html.ActionLink("Logout", "LogoutSuperAdmin", "", new { @class = "btn btn-primary" })
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="navbar-header">
+
+            </div>
+            <ul class="nav navbar-nav">
+                <li>@Html.ActionLink("Condominiums", "SuperAdminDashboard", new { })</li>
+                <li>@Html.ActionLink("Manage Admins", "UserIndex", new { })</li>
+                <li>@Html.ActionLink("Manage Condos", "CondoIndex", new { })</li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="" style="padding-left:40px;" class="glyphicon glyphicon-user" data-bs-toggle="dropdown"> @Session["Name"]</a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            @Html.ActionLink("Profile", "SuperAdminProfile",new { userId = Session["UserId"] })
+                        </li>
+                        <li>
+                            @Html.ActionLink("Change Password", "SuperAdminEditPassword", "SuperAdmin", new { username = Session["Username"] })
+                        </li>
+                        <hr/>
+                        <li><a class="dropdown-item" data-toggle="modal" data-target="#exampleModal" href="">Logout</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <!-- Modal -->
+
+
+
+    <div>
+        @RenderBody()
+    </div>
+    <script src="~/lib/jqueryui/jquery.min.js"></script>
+    <script src="~/lib/jquery-validate/jquery.validate.min.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+    <script src="~/lib/bootstrap/js/bootstrap.js"></script>
+    <script src="~/lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="~/lib/bootstrap/js/bootstrap.bundle.js"></script>
+    <script>
+        $('#editmsg').fadeOut(3000)
+
+        function fileValidation() {
+            const alertMessage = "Invalid file type!! \nOnly files with the following extension are allowed :  jpg jpeg png gif.";
+            var baseUrl = document.location.origin;
+            var DefaultImagePath = baseUrl + '/Upload/NoImage.png';
+            var fileInput = document.getElementById('CondoPicture');
+            var filePath = fileInput.value;
+            // Allowing file type
+            var allowedExtensions =
+                /(\.jpg|\.jpeg|\.png|\.gif)$/i;
+            if (!allowedExtensions.exec(filePath)) {
+                alert(alertMessage);
+                fileInput.value = null;
+                var DefaultImage = document.getElementById('imagePreview');
+                $(DefaultImage).attr('src', DefaultImagePath);
+                return false;
+            }
+            else {
+                // Image preview
+                if (fileInput.files && fileInput.files[0]) {
+                    var reader = new FileReader();
+                    reader.onload = function (e) {
+                        var Preview = document.getElementById('imagePreview');
+                        $(Preview).attr('src', e.target.result);
+                    };
+                    reader.readAsDataURL(fileInput.files[0]);
+                }
+            }
+        }
+    </script>
+
+    @RenderSection("scripts", required: false)
+</body>
+</html>
+

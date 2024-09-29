@@ -1,0 +1,72 @@
+﻿@model CondoBll.UserCondoData
+
+@{
+    ViewBag.Title = "CondoInformation";
+    Layout = "~/Views/Shared/_LayoutAdminDashboard.cshtml";
+}
+@if (string.IsNullOrEmpty(Model.CondoName))
+{
+    <div style="text-align:center;font:150;padding-top:5%;color:red;font:bold;font-size:50px;">
+        @Html.Label("Result Not Found!")
+        <br />
+        <i class='fas fa-exclamation-triangle' style='font-size:100px;color:red'></i>
+
+    </div>
+}
+else
+{
+
+    <h2>Condo Information</h2>
+    if (TempData["UpdateCondoMessage"] != null)
+    {
+        <div class="alert alert-success alert-dismissable" id="editmsg">
+            <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+            <strong>Success! </strong> @TempData["UpdateCondoMessage"]
+        </div>
+    }
+    <div>
+        <hr />
+        <dl class="dl-horizontal">
+
+            <dt>
+                @Html.DisplayNameFor(model => model.CondoName)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.CondoName)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.CondoEmail)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.CondoEmail)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.Address)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Address)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Contact)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Contact)
+            </dd>
+
+
+        </dl>
+    </div>
+    <div class="image" style="padding-left:50%;margin-top:-9%;">
+        <img src="../Images/@(Model.CondoPicture)" alt="@Model.CondoPicture" style="height:300px;width:500px;align-self:center;" />
+    </div>
+    <p style="padding-left:85%; padding-top:3%;">
+        @Html.ActionLink("Edit", "EditCondo", "Admin", new { condoId = Model.CondoId }, new { @class = "btn btn-info" }) &nbsp;
+    </p>
+}
+
